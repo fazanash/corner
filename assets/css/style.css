@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;800&display=swap');
+
+/* ==== ROOT ===== */
+:root {
+    /* ----- Color ----- */
+    --brand-nomral: #983094;
+    --brand-hover: #6B2268;
+    --brand-accent: #305398;
+    --text-heading: #15253D; 
+    --text-body: #1D1F22;
+    --text-white: #FDFDFD;
+    --background: #F6F4FF;
+    --background-card: #EEEAFF;
+    --background-light: rgba(53, 53, 53, 0.048);
+    /* Font dan Typography */
+    --body-font: 'Inter', sans-serif;
+    --title-font-size: 4.5rem; 
+    --biggest-font-size: 3.5rem;
+    --bigger-font-size: 3rem;
+    --big-font-size: 2.5rem;
+    --medium-font-size: 2rem;
+    --small-font-size: 1.5rem;
+    --smaller-font-size: 1.2rem;
+    --smallest-font-size: 16px;
+    /* Font Weights */
+    --font-black: 800;
+    --font-bold: 500;
+    --font-reguler: 300;
+    --font-light: 200;
+}
+*, ::before, ::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--body-font);
+    font-size: 16px;
+    color: var(--text-body);
+    background-color: var(--background);
+}
+h1, h2, h3, h4, h5, h6, ul, p {
+    margin: 0;
+    padding: 0;
+    color: var(--text-heading);
+    margin-bottom: 16px;
+}
+h1 {
+    font-size: var(--title-font-size);
+    font-weight: var(--font-black);
+}
+h2 {
+    font-size: var(--biggest-font-size);
+    font-weight: var(--font-black);
+}
+h3 {
+    font-size: var(--bigger-font-size);
+    font-weight: var(--font-black);
+}
+h4 {
+    font-size: var(--big-font-size);
+    font-weight: var(--font-black);
+}
+h5 {
+    font-size: var(--medium-font-size);
+    font-weight: var(--font-black);
+}
+h6 {
+    font-size: var(--smaller-font-size);
+    font-weight: var(--font-black);
+}
+p {
+    font-size: var(--smallest-font-size);
+    font-weight: var(--font-black);
+}
+ul {
+    list-style: none;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: var(--text-body);
+    font-size: var(--smallest-font-size);
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* start Restyle Bootstrap */
+.navbar-toggler, .navbar-toggler:hover, .navbar-toggler:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+.btn, .btn:hover, .btn:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+/* End Restyle Bootstrap */
+
+/*  Start: Button Corner */
+button, button:hover, button:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+.btn-crn {
+    padding: 16px 40px;
+    border-radius: 20px;
+}
+.btn-crn-border {
+    border: 1px solid var(--brand-nomral);
+    color: var(--text-heading);
+}
+.btn-crn-border:hover {
+    border: 1px solid var(--brand-nomral);
+    background-color: var(--brand-nomral);
+    color: var(--text-white);
+    box-shadow: 4px 4px 2px 16px var(--shadow);
+}
+.btn-crn-filled {
+    background-color: var(--brand-nomral);
+    color: var(--text-light);
+}
+.btn-crn-filled:hover {
+    background-color: var(--brand-hover);
+    color: var(--text-light);
+}
+/*  End: Button Corner  */
+
+/* Start: Header */
+.header .nav-item .nav-link {
+    padding: 16px;
+}
+.go-dashboard {
+    display: flex;
+    flex-direction: column;
+}
+.go-dashboard .login    {
+    background-color: var(--brand-nomral);
+    color: var(--text-white);
+}
+.navbar-collapse {
+    background-color: var(--background-card);
+    padding: 16px 24px 24px;
+    border-radius: 16px;
+}
+/* End: Header */
+
+@media (min-width:361px) {
+
+}
+
+@media (min-width:768px) {
+    /* Start: Header */
+    .header {
+        padding: 16px 0;
+    }
+    .navbar-collapse {
+        background-color: unset;
+        padding: unset;
+        border-radius: unset;
+    }
+    .go-dashboard {
+        flex-direction: row;
+    }
+    /* End: End */
+}
+
+@media (min-width:1200px) {
+
+}
+
+@media (min-width:1920px) {
+
+}
